@@ -1,0 +1,135 @@
+/* Themen
+Variablen deklarieren
+Funktionen definieren und aufrufen
+Textinhalte mit .innerText bzw. .innerHTML verändern
+
+
+Assets
+
+Fonts: Orbitron, Lato
+Farben: #2C2C2C, #FDF860, #000000, #FFFFFF, #97F5BB, #525DF4
+
+Die Figma Vorlage finder ihr hier: https://www.figma.com/file/56APnPUbSHAgM6IoFk9hvp/Scorekeeper?node-id=0%3A1 */
+/* font-family: 'Lato', sans-serif; */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato"), local("Lato-Regular"),
+    url(../fonts/Lato/Lato-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Orbitron"), local("Orbitron-Regular"),
+    url(../fonts/Orbitron/Orbitron-VariableFont_wght.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #2c2c2c;
+  text-align: center;
+}
+.home,
+.away {
+  width: 415px;
+  height: 415px;
+  border-radius: 30px;
+  background-color: black;
+  margin: 2.5rem auto;
+}
+.home p,
+.away p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 188px;
+  text-align: center;
+  color: #fdf860;
+  padding-top: 113px;
+}
+.start {
+  margin: 113px 95px 114px 95px;
+}
+fieldset {
+  position: relative;
+  display: inline-block;
+  width: 489px;
+  height: 489px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  top: 50px;
+}
+.borderHome {
+  border: 5px solid#97F5BB;
+}
+.borderAway {
+  border: 5px solid#525DF4;
+  margin-left: 150px;
+}
+legend {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 0 5px;
+  background: #2c2c2c;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 37px;
+  line-height: 46px;
+  color: #fff;
+}
+.btn {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: center;
+  margin: 7.5rem 0 0 0;
+}
+.btnHome {
+  border: none;
+  background: #97f5bb;
+  border-radius: 20px;
+  width: 105px;
+  height: 105px;
+  display: inline-block;
+  margin: 0.7813rem;
+  color: #fff;
+  font-size: 37px;
+}
+.btnAway {
+  border: none;
+  background: #525df4;
+  border-radius: 20px;
+  width: 105px;
+  height: 105px;
+  display: inline-block;
+  margin: 0.7813rem;
+  color: #fff;
+  font-size: 37px;
+}
+footer button {
+  width: 130px;
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  text-align: center;
+  display: block;
+  margin: 10rem auto;
+  border: none;
+}
+button {
+  width: 130px;
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  text-align: center;
+  display: block;
+  margin: 2.5rem auto;
+  border: none;
+}

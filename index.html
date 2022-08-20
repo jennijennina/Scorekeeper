@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ergebnisvorschau</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <button onclick="teamname()">Teamname</button>
+    <fieldset class="borderHome">
+      <legend id="teamNameHome">Home</legend>
+      <div class="home"><p id="countHome">0</p></div>
+      <article class="btn">
+        <button class="btnHome" onclick="onePlusHome()">+1</button>
+        <button class="btnHome" onclick="twoPlusHome()">+2</button>
+        <button class="btnHome" onclick="threePlusHome()">+3</button>
+      </article>
+    </fieldset>
+    <fieldset class="borderAway">
+      <legend id="teamNameAway">Away</legend>
+      <div class="away"><p id="countAway">0</p></div>
+      <article class="btn">
+        <button class="btnAway" onclick="onePlusAway()">+1</button>
+        <button class="btnAway" onclick="twoPlusAway()">+2</button>
+        <button class="btnAway" onclick="threePlusAway()">+3</button>
+      </article>
+    </fieldset>
+    <script src="assets/js/main.js"></script>
+  </body>
+  <footer>
+    <button onclick="reset()">Reset</button>
+  </footer>
+</html>
