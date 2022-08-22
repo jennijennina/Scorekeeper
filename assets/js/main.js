@@ -1,38 +1,41 @@
+"use strict";
+
+let countHome = document.getElementById("countHome");
+let countAway = document.getElementById("countAway");
+
+let startHome = 0;
+let startAway = 0;
+
 function onePlusHome() {
-  let start = document.getElementById("countHome").innerText;
-  let result = Number(start) + Number(1);
-  document.getElementById("countHome").innerText = result;
+  startHome++;
+  countHome.innerHTML = startHome;
 }
 function twoPlusHome() {
-  let start = document.getElementById("countHome").innerText;
-  let result = Number(start) + Number(2);
-  document.getElementById("countHome").innerText = result;
+  startHome += 2;
+  countHome.innerHTML = startHome;
 }
+
 function threePlusHome() {
-  let start = document.getElementById("countHome").innerText;
-  let result = Number(start) + Number(3);
-  document.getElementById("countHome").innerText = result;
+  startHome += 3;
+  countHome.innerHTML = startHome;
 }
 function onePlusAway() {
-  let start = document.getElementById("countAway").innerText;
-  let result = Number(start) + Number(1);
-  document.getElementById("countAway").innerText = result;
+  startAway++;
+  countAway.innerHTML = startAway;
 }
 function twoPlusAway() {
-  let start = document.getElementById("countAway").innerText;
-  let result = Number(start) + Number(2);
-  document.getElementById("countAway").innerText = result;
+  startAway += 2;
+  countAway.innerHTML = startAway;
 }
 function threePlusAway() {
-  let start = document.getElementById("countAway").innerText;
-  let result = Number(start) + Number(3);
-  document.getElementById("countAway").innerText = result;
+  startAway += 3;
+  countAway.innerHTML = startAway;
 }
 function reset() {
-  document.getElementById("countHome").innerText = 0;
-  document.getElementById("countAway").innerText = 0;
-  document.getElementById("teamNameHome").innerText = "Home";
-  document.getElementById("teamNameAway").innerText = "Away";
+  startHome = 0;
+  startAway = 0;
+  countHome.innerHTML = startHome;
+  countAway.innerHTML = startAway;
 }
 function teamname() {
   let teamNameHome = prompt("Wie heisst dein Team?");
