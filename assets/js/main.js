@@ -31,6 +31,8 @@ function threePlusAway() {
   startAway += 3;
   countAway.innerHTML = startAway;
 }
+// Reset
+
 function reset() {
   startHome = 0;
   startAway = 0;
